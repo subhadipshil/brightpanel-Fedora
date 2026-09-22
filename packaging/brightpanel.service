@@ -1,0 +1,14 @@
+[Unit]
+Description=BrightPanel External Monitor Control Daemon
+Documentation=https://github.com/subhadipshil/brightpanel-Fedora
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/brightpanel daemon
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target

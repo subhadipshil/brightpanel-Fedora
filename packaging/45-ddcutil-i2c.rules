@@ -1,0 +1,6 @@
+# udev rule for BrightPanel and ddcutil on Fedora Linux
+# Assigns i2c device nodes to the i2c group with read/write permissions (0660)
+# and assigns the uaccess tag for currently active seat/session users.
+
+KERNEL=="i2c-[0-9]*", GROUP="i2c", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="i2c-dev", KERNEL=="i2c-[0-9]*", GROUP="i2c", MODE="0660", TAG+="uaccess"

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brightpanel"
+version = "1.0.0"
+description = "Production-grade external monitor control suite for Fedora Linux"
+readme = "README.md"
+authors = [{ name = "Subhadip Shil", email = "subhadipshil1623@gmail.com" }]
+license = { text = "MIT" }
+keywords = ["brightness", "monitor", "ddcutil", "fedora", "gnome", "libadwaita", "display"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Gnome",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Desktop Environment :: Gnome",
+    "Topic :: System :: Hardware",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "PyGObject>=3.42.0",
+]
+
+[project.scripts]
+brightpanel = "brightpanel.cli.main:main"
+brightpanel-gui = "brightpanel.gui.app:run_app"
+
+[tool.setuptools.packages.find]
+include = ["brightpanel*"]

@@ -1,0 +1,13 @@
+{
+  "name": "BrightPanel - External Monitor Control",
+  "description": "Control external monitor brightness, contrast, volume and input source from Fedora GNOME top panel.",
+  "uuid": "brightpanel@subhadipshil.github.com",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48"
+  ],
+  "url": "https://github.com/subhadipshil/brightpanel-Fedora",
+  "version": 1
+}

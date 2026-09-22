@@ -1,0 +1,1 @@
+"""BrightPanel Command Line Interface."""

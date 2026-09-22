@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=BrightPanel
+GenericName=External Monitor Control
+Comment=Adjust external monitor brightness, contrast, volume, and inputs
+Exec=brightpanel-gui %U
+Icon=io.github.subhadipshil.brightpanel
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Settings;HardwareSettings;
+Keywords=brightness;monitor;display;ddcutil;contrast;backlight;screen;
+StartupNotify=true
+X-GNOME-UsesNotifications=true

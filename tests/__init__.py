@@ -1,0 +1,1 @@
+"""BrightPanel test suite."""

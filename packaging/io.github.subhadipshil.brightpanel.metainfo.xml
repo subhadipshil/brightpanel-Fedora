@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.subhadipshil.brightpanel</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>BrightPanel</name>
+  <summary>Production-grade external monitor control suite for Fedora Linux</summary>
+  <description>
+    <p>
+      BrightPanel gives Linux users seamless hardware control over external monitors connected via HDMI, DisplayPort, or USB-C using DDC/CI protocol.
+    </p>
+    <p>Key features include:</p>
+    <ul>
+      <li>Direct hardware brightness, contrast, audio volume, and input source switching.</li>
+      <li>GNOME Shell Top Panel integration with quick sliders.</li>
+      <li>Thread-safe rate limiting and debouncing to prevent I2C bus lockup.</li>
+      <li>Unified multi-monitor slider synchronization.</li>
+      <li>Automated Fedora system diagnostics and permission configuration.</li>
+    </ul>
+  </description>
+  <url type="homepage">https://github.com/subhadipshil/brightpanel-Fedora</url>
+  <url type="bugtracker">https://github.com/subhadipshil/brightpanel-Fedora/issues</url>
+  <developer_name>Subhadip Shil</developer_name>
+  <launchable type="desktop-id">io.github.subhadipshil.brightpanel.desktop</launchable>
+  <provides>
+    <binary>brightpanel</binary>
+    <binary>brightpanel-gui</binary>
+  </provides>
+  <releases>
+    <release version="1.0.0" date="2026-09-22">
+      <description>
+        <p>Initial production release of BrightPanel for Fedora Linux.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1" />
+</component>
